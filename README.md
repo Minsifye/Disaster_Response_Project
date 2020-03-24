@@ -93,4 +93,4 @@ There are three components for this project.
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 Must give credit to Figure 8 for the data.  You can find the Licensing for the data and other descriptive information at the this link available [here](https://www.figure-eight.com/dataset/combined-disaster-response-data/).  Otherwise, feel free to use the code here as you would like! 
-
+Thanks to [Udacity](https://www.udacity.com/) Team for helping me to learn all these new things.
