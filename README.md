@@ -67,6 +67,11 @@ There are three components for this project.
 
 - Adding data visualizations using Plotly in the web app.
 
+<p align="center">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/weather.png?raw=true" width="750" title="weather">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/people.png?raw=true" width="750" title="people">
+</p>
+
 
 ## File Descriptions <a name="files"></a>
 
@@ -81,9 +86,9 @@ There are three components for this project.
 - At the end, use that trained and tuned ML model and use to predict any new message and find which disaster category it will fit.
 - Create a front-end application using flask to showcase visualization and model disaster category prediction on a webpage.
 <p align="center">
-  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/weather.png?raw=true" width="750" title="weather">
-  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/people.png?raw=true" width="750" title="people">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/result.png?raw=true" width="750" title="result">
 </p>
+
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
