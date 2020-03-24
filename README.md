@@ -1,10 +1,50 @@
-# Disaster Response Project 
+# Disaster Response Pipeline Project 
 
 To analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
+<p align="center">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/title.png?raw=true" width="750" title="title">
+</p>
 
-### A Udacity Data Scientist Nanodegree Project - Tasks for the project
-Project Components
-There are three components you'll need to complete for this project.
+
+### A Udacity Data Scientist Nanodegree Project
+
+
+### Table of Contents
+
+1. [Installation](#installation)
+2. [Project Motivation](#motivation)
+3. [Execution](#execution)
+4. [File Descriptions](#files)
+5. [Results](#results)
+5. [Licensing, Authors, and Acknowledgements](#licensing) 
+
+
+## Installation <a name="installation"></a>
+
+- Python 3.5+ (I used Python 3.6)
+- Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
+- Natural Language Process Libraries: NLTK
+- SQLlite Database Libraqries: SQLalchemy
+- Web App and Data Visualization: Flask, Plotly
+
+### Execution <a name="execution"></a>
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+3. Go to http://0.0.0.0:3001/
+
+
+
+## Project Motivation<a name="motivation"></a>
+
+There are three components for this project.
 1. ETL Pipeline
 
 - In a Python script, process_data.py, write a data cleaning pipeline that:
@@ -12,9 +52,6 @@ There are three components you'll need to complete for this project.
 - Merges the two datasets
 - Cleans the data
 - Stores it in a SQLite database
-
-<i>The first part of your data pipeline is the Extract, Transform, and Load process. Here, you will read the dataset, clean the data, and then store it in a SQLite database. We expect you to do the data cleaning with pandas. To load the data into an SQLite database, you can use the pandas dataframe .to_sql() method, which you can use with an SQLAlchemy engine. Feel free to do some exploratory data analysis in order to figure out how you want to clean the data set. Though you do not need to submit this exploratory data analysis as part of your project, you'll need to include your cleaning code in the final ETL script, process_data.py.</i>
-
 
 2. ML Pipeline
 
@@ -26,15 +63,29 @@ There are three components you'll need to complete for this project.
 - Outputs results on the test set
 - Exports the final model as a pickle file
 
-<i>For the machine learning portion, you will split the data into a training set and a test set. Then, you will create a machine learning pipeline that uses NLTK, as well as scikit-learn's Pipeline and GridSearchCV to output a final model that uses the message column to predict classifications for 36 categories (multi-output classification). Finally, you will export your model to a pickle file. After completing the notebook, you'll need to include your final machine learning code in train_classifier.py.</i>
-
-
 3. Flask Web App
-- We are providing much of the flask web app for you, but feel free to add extra features depending on your knowledge of flask, html, css and javascript. For this part, you'll need to:
-- Modify file paths for database and model as needed
-- Add data visualizations using Plotly in the web app. One example is provided for you
 
-<i>In the last step, you'll display your results in a Flask web app. We have provided a workspace for you with starter files. You will need to upload your database file and pkl file with your model. This is the part of the project that allows for the most creativity. So if you are comfortable with html, css, and javascript, feel free to make the web app as elaborate as you would like. In the starter files, you will see that the web app already works and displays a visualization. You'll just have to modify the file paths to your database and pickled model file as needed. There is one other change that you are required to make. We've provided code for a simple data visualization. Your job will be to create two additional data visualizations in your web app based on data you extract from the SQLite database. You can modify and copy the code we provided in the starter files to make the visualizations.</i>
+- Adding data visualizations using Plotly in the web app.
 
 
+## File Descriptions <a name="files"></a>
+
+- [ETL Pipeline Preparation.ipynb](https://github.com/Minsifye/Disaster_Response_Project/blob/master/ETL%20Pipeline%20Preparation.ipynb) : This notebook will help you to go through initial thought process behind ETL part of this project and how different procedure were tried and tested. The final outcome of this notebook is used to create process_data.py file.
+- [ML Pipeline Preparation.ipynb](https://github.com/Minsifye/Disaster_Response_Project/blob/master/ML%20Pipeline%20Preparation.ipynb) : This jupyter notebook will help to understand, why and how a particular machine learning algorithm were choosen. This jupyter notebook represent initial thought process for creating a model pipeline. The final outcome of this notebook is used to create train_classifier.py file.
+
+<i>Markdown cells were used to assist in walking through the thought process for individual steps. </i> 
+
+
+## Results<a name="results"></a>
+- The outcome of this project is to start from scratch with a dataset, create a ETL pipeline for data engineering job and create a Machine Learning pipeline to train a model which can read text data and predict 36 classification categories.
+- At the end, use that trained and tuned ML model and use to predict any new message and find which disaster category it will fit.
+- Create a front-end application using flask to showcase visualization and model disaster category prediction on a webpage.
+<p align="center">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/weather.png?raw=true" width="750" title="weather">
+  <img src="https://github.com/Minsifye/Disaster_Response_Project/blob/master/people.png?raw=true" width="750" title="people">
+</p>
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+Must give credit to Figure 8 for the data.  You can find the Licensing for the data and other descriptive information at the this link available [here](https://www.figure-eight.com/dataset/combined-disaster-response-data/).  Otherwise, feel free to use the code here as you would like! 
 
